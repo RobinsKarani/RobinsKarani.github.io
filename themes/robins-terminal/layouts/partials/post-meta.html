@@ -10,8 +10,4 @@
   </div>
   {{ end }}
 
-  {{ if gt .WordCount 0 }}
-  <span class="meta-sep">|</span>
-  <span class="read-time">~{{ div .WordCount 200 | add 1 }} min read</span>
-  {{ end }}
 </div>

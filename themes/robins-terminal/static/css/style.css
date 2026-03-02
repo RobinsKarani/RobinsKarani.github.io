@@ -9,6 +9,7 @@
   --accent-strong: #bfd0e6;
   --tag-bg: #23282e;
   --tag-text: #d8d3c9;
+  --link-underline: rgba(167, 164, 158, 0.38);
   --font-body: "JetBrains Mono", "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
   --font-ui: "JetBrains Mono", "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
   --radius: 8px;
@@ -25,6 +26,7 @@
   --accent-strong: #3f5674;
   --tag-bg: #e7dfd1;
   --tag-text: #2d3340;
+  --link-underline: rgba(96, 101, 109, 0.38);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -36,8 +38,14 @@ body {
   line-height: 1.7;
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--accent-strong); text-decoration: underline; }
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--link-underline);
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1px;
+}
+a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-strong); }
 
 .site-shell {
   max-width: 1100px;
@@ -190,6 +198,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   padding: 0.15rem 0.5rem;
   font-family: var(--font-ui);
   font-size: 0.74rem;
+  text-decoration: none;
 }
 
 .tag-lg {
