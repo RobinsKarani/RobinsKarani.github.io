@@ -3,11 +3,12 @@ title: "About Me"
 date: 2026-03-02
 draft: false
 hideFromHome: true
+hideMeta: true
 ---
 
 I am Robinson Karani.
 
-This blog is where I share technical notes, project logs, and experiments across hardware, machine learning, cryptography, and cognitive science and other amusing things about life.
+This blog is mostly about tech, especially hardware,AI & machine learning, cryptography, and cognitive science, and other interesting things about life.
 
 I like building from first principles and documenting what works, what fails, and what I learn in the process.
 
