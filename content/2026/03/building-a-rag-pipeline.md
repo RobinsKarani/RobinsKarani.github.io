@@ -3,7 +3,6 @@ title: "[TEST] Building a Simple RAG Pipeline"
 date: 2026-02-23
 tags: ["ai", "rag", "ml"]
 draft: false
-hideFromHome: true
 description: "A quick test post about retrieval-augmented generation architecture."
 ---
 
