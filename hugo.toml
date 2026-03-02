@@ -74,6 +74,7 @@ summaryLength = 50   # words in auto-generated summary
   description = "Hardware · ML · Cryptography · CogSci"
   tagline     = "hardware · ml · cryptography · cogSci — notes from the rabbit hole"
   footerMsg   = "built with ♥"
+  faviconVersion = "20260302-2"
 
   # Logo (optional — uses initials box if not set)
   # logo        = "/logo.svg"

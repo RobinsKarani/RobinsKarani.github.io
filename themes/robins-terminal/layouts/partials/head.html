@@ -12,8 +12,10 @@
 
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
 
-<link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}" />
-<link rel="shortcut icon" type="image/png" href="{{ "favicon.png" | relURL }}" />
+{{ $favVersion := .Site.Params.faviconVersion | default "1" }}
+<link rel="icon" type="image/png" sizes="32x32" href='{{ printf "%s?v=%s" ("favicon.png" | relURL) $favVersion }}' />
+<link rel="shortcut icon" type="image/png" href='{{ printf "%s?v=%s" ("favicon.png" | relURL) $favVersion }}' />
+<link rel="apple-touch-icon" href='{{ printf "%s?v=%s" ("favicon.png" | relURL) $favVersion }}' />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
