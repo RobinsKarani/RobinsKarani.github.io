@@ -20,16 +20,6 @@
       {{ .Content }}
     </div>
 
-    {{/* ── Tags footer ── */}}
-    {{ with .Params.tags }}
-    <div class="article-tags-footer">
-      <span style="color:var(--text-muted);font-size:11px;">tagged:</span>
-      {{ range . }}
-      <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>
-      {{ end }}
-    </div>
-    {{ end }}
-
   </article>
 
 </div>
