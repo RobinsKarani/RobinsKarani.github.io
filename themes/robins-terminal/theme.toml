@@ -1,0 +1,12 @@
+name        = "robins-terminal"
+license     = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A nerd terminal-style Hugo theme — dark, monospaced, fast."
+homepage    = "https://robinskarani.github.io"
+tags        = ["blog", "terminal", "dark", "minimal", "monospace"]
+features    = ["Dark/Light mode", "Syntax highlighting", "Image support", "Tags"]
+min_version = "0.110.0"
+
+[author]
+  name    = "Robinson Karani"
+  homepage = "https://robinskarani.github.io"

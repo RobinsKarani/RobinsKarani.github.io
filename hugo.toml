@@ -1,0 +1,104 @@
+baseURL  = "https://robinskarani.github.io/"
+title    = "Robins"
+theme    = "robins-terminal"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+paginate      = 10   # posts per page
+summaryLength = 50   # words in auto-generated summary
+
+# copyright = "MIT — [source](https://github.com/robinskarani)"
+
+# ── Search JSON output ─────────────────────────────────────
+[outputs]
+  home = ["HTML", "JSON"]
+
+# ── Taxonomy ───────────────────────────────────────────────
+[taxonomies]
+  tag = "tags"
+
+# ── Markup ────────────────────────────────────────────────
+[markup]
+  [markup.highlight]
+    style    = "github-dark"
+    lineNos  = false
+    noClasses = true
+  [markup.goldmark.renderer]
+    unsafe = true          # allow raw HTML in .md files
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel   = 4
+    ordered    = false
+
+# ── Nav menu ──────────────────────────────────────────────
+[menus]
+  [[menus.main]]
+    name   = "blog"
+    url    = "/"
+    weight = 1
+  [[menus.main]]
+    name   = "about_me"
+    url    = "/about/"
+    weight = 2
+  [[menus.main]]
+    name   = "projects"
+    url    = "/projects/"
+    weight = 3
+
+  # ── Social icon links (shown as icon row below nav) ──────
+  # identifier must match a supported icon name:
+  # github, twitter, gitlab, linkedin, mastodon, youtube,
+  # email, rss, steam, telegram, discord, substack
+  [[menus.icons]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/RobinsKarani"
+    weight     = 1
+  [[menus.icons]]
+    identifier = "twitter"
+    name       = "X (Twitter)"
+    url        = "https://x.com/robinskarani"
+    weight     = 2
+  [[menus.icons]]
+    identifier = "linkedin"
+    name       = "LinkedIn"
+    url        = "https://www.linkedin.com/in/robinsonkarani/"
+    weight     = 3
+
+# ── Theme params ──────────────────────────────────────────
+[params]
+  handle      = "robins"         # shown in logo, prompts, footer
+  initials    = "RK"             # shown in logo box if no logo image
+  domain      = "karani"         # shown in footer prompt
+  author      = "Robinson Karani"
+  description = "Hardware · ML · Cryptography · CogSci"
+  tagline     = "hardware · ml · cryptography · cogSci — notes from the rabbit hole"
+  footerMsg   = "built with ♥"
+
+  # Logo (optional — uses initials box if not set)
+  # logo        = "/logo.svg"
+  # logoAltText = "Robins"
+  # favicon     = "/favicon.png"
+  # faviconIco  = "/favicon.ico"
+  # appletouch  = "/apple-touch-icon.png"
+
+  # ── Features ──────────────────────────────────────────
+  showRss                = true   # RSS link in nav
+  showTags               = true   # Tags link in nav
+  enableSearch           = true   # Search page + /index.json
+  imageInArticlePreview  = true   # show post image on blog list
+  fitImageInArticlePreview = false # contain instead of cover crop
+  gridView               = false  # grid layout for post list
+
+  # ── Related articles ──────────────────────────────────
+  enableRelatedArticles  = true
+  relatedArticlesNum     = 3
+
+  # ── Footer columns ────────────────────────────────────
+  enableFooterColumns    = false  # set true + edit data/footer_columns.yml
+
+  # ── Analytics (optional) ──────────────────────────────
+  # plausibleScriptUrl = "https://plausible.io/js/script.js"
+  # plausibleDomain    = "robinskarani.github.io"
+  # umamiScriptUrl     = "https://analytics.example.com/script.js"
+  # umamiWebsiteId     = "your-website-id"

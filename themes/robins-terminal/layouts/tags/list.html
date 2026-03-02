@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container">
+  {{ if eq .Kind "taxonomy" }}
+  <div class="section-header">
+    <h1>Tags</h1>
+    <p class="subtitle">{{ len .Data.Terms }} tags across all posts</p>
+  </div>
+
+  <div class="tags-cloud">
+    {{ range .Data.Terms.Alphabetical }}
+    <a class="tag tag-lg" href="{{ .Page.RelPermalink }}">
+      #{{ .Term }} <span class="tag-count">({{ .Count }})</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div class="section-header">
+    <h1>{{ .Title }}</h1>
+    <p class="subtitle">{{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</p>
+  </div>
+
+  {{ if .Pages }}
+  <div class="post-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="post-item">
+      {{ partial "post-meta.html" . }}
+      <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ with .Description }}
+      <p class="post-excerpt">{{ . }}</p>
+      {{ else }}
+      <p class="post-excerpt">{{ .Summary | plainify | truncate 180 }}</p>
+      {{ end }}
+      <a class="post-read-more" href="{{ .Permalink }}">Continue reading →</a>
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p style="color:var(--text-muted)">No posts found.</p>
+  {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

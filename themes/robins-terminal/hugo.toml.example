@@ -1,0 +1,56 @@
+baseURL  = "https://robinskarani.github.io/"
+title    = "Robins"
+theme    = "robins-terminal"
+language = "en"
+
+# ── Pagination ──────────────────────────────────────────
+[pagination]
+  pagerSize = 10
+
+# ── Taxonomy ────────────────────────────────────────────
+[taxonomies]
+  tag = "tags"
+
+# ── Markup ──────────────────────────────────────────────
+[markup]
+  [markup.highlight]
+    style              = "github-dark"   # syntax highlight colour scheme
+    lineNos            = false
+    noClasses          = true            # inline styles (no extra CSS needed)
+  [markup.goldmark.renderer]
+    unsafe             = true            # allows raw HTML in .md files
+
+# ── Nav menu ────────────────────────────────────────────
+[menus]
+  [[menus.main]]
+    name   = "blog"
+    url    = "/"
+    weight = 1
+  [[menus.main]]
+    name   = "about_me"
+    url    = "/about/"
+    weight = 2
+  [[menus.main]]
+    name   = "projects"
+    url    = "/projects/"
+    weight = 3
+
+# ── Theme params (edit these!) ───────────────────────────
+[params]
+  # Your short name shown in logo & footer
+  handle      = "robins"
+  initials    = "RK"
+  domain      = "karani"
+  author      = "Robinson Karani"
+  description = "Hardware · ML · Cryptography · CogSci"
+  tagline     = "hardware · ml · cryptography · cogSci — notes from the rabbit hole"
+  footerMsg   = "built with ♥"
+
+  # Social links (shown in about page)
+  twitter     = "YOUR_X_URL"
+  github      = "YOUR_GITHUB_URL"
+  substack    = "YOUR_SUBSTACK_URL"
+  resume      = "YOUR_GDRIVE_URL"
+
+  # Enable Hugo syntax highlighting CSS
+  syntaxHighlight = false   # set true if you add css/syntax.css

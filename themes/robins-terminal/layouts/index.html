@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="container">
+  {{ $posts := where .Site.RegularPages "Params.hideFromHome" "!=" true }}
+  {{ if $posts }}
+  <div class="post-list">
+    {{ range $posts.ByDate.Reverse }}
+    <article class="post-item">
+
+      {{ partial "post-meta.html" . }}
+
+      <a class="post-title" href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+
+      {{ with .Description }}
+      <p class="post-excerpt">{{ . }}</p>
+      {{ else }}
+      <p class="post-excerpt">{{ .Summary | plainify | truncate 180 }}</p>
+      {{ end }}
+
+      <a class="post-read-more" href="{{ .Permalink }}">Continue reading →</a>
+
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div class="empty-state">
+    <p><span style="color:var(--accent)">$</span> No posts yet.</p>
+    <p style="color:var(--text-muted);font-size:12px;margin-top:8px;">
+      Run <code>hugo new content/posts/my-first-post.md</code> to get started.
+    </p>
+  </div>
+  {{ end }}
+
+</div>
+{{ end }}

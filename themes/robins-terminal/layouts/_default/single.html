@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="container">
+
+  <a class="article-back" href="{{ "/" | relURL }}">← back to articles</a>
+
+  <article>
+
+    <div class="article-header">
+      <h1>{{ .Title }}</h1>
+      {{ partial "post-meta.html" . }}
+    </div>
+
+    {{/* ── Cover image (optional) ── */}}
+    {{ with .Params.cover }}
+    <div class="cover-image">
+      <img src="{{ . }}" alt="{{ $.Title }} cover" loading="lazy" />
+    </div>
+    {{ end }}
+
+    {{/* ── Article body ── */}}
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    {{/* ── Tags footer ── */}}
+    {{ with .Params.tags }}
+    <div class="article-tags-footer">
+      <span style="color:var(--text-muted);font-size:11px;">tagged:</span>
+      {{ range . }}
+      <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </article>
+
+</div>
+{{ end }}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-theme="light">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="site-shell">
+    {{ partial "nav.html" . }}
+    <main class="site-main">
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer.html" . }}
+    </main>
+  </div>
+
+  <script src="{{ "js/main.js" | relURL }}"></script>
+
+</body>
+</html>
