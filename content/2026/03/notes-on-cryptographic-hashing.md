@@ -3,6 +3,7 @@ title: "[TEST] Notes on Cryptographic Hashing"
 date: 2026-02-25
 tags: ["cryptography", "security", "notes"]
 draft: false
+hideFromHome: true
 description: "Quick testing notes on hash properties and practical use."
 ---
 

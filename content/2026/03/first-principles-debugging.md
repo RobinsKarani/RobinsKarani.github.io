@@ -3,6 +3,7 @@ title: "[TEST] First-Principles Debugging"
 date: 2026-02-27
 tags: ["debugging", "engineering", "systems"]
 draft: false
+hideFromHome: true
 description: "Breaking complex failures into measurable units."
 ---
 

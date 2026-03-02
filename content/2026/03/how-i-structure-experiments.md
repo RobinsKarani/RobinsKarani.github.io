@@ -3,6 +3,7 @@ title: "[TEST] How I Structure Experiments"
 date: 2026-02-26
 tags: ["workflow", "research", "productivity"]
 draft: false
+hideFromHome: true
 description: "A lightweight method for documenting technical experiments."
 ---
 

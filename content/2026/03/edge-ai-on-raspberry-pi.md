@@ -3,6 +3,7 @@ title: "[TEST] Edge AI on Raspberry Pi"
 date: 2026-02-24
 tags: ["hardware", "edge-ai", "linux"]
 draft: false
+hideFromHome: true
 description: "Running lightweight models on constrained hardware for testing."
 ---
 

@@ -3,6 +3,7 @@ title: "Hello World – My First Blog Post"
 date: 2026-03-02
 tags: ["introduction", "personal", "blog"]
 draft: false
+description: "My first blog post"
 ---
 
 Hi there! 👋
