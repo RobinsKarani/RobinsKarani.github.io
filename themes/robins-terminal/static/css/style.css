@@ -102,7 +102,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 }
 
 .theme-toggle {
-  margin-top: 0.5rem;
+  margin-top: 0;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text-muted);
@@ -114,6 +114,10 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 120;
 }
 
 .theme-toggle:hover {
@@ -394,6 +398,11 @@ footer {
   }
 
   .nav-logo { margin-bottom: 1rem; }
+
+  .theme-toggle {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
 
   .nav-links {
     display: flex;
