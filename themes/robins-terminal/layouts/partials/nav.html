@@ -7,9 +7,9 @@
     <li>
       <a href="{{ .URL | relURL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>
         {{ if .Name }}
-          {{ replace .Name "_" " " | title }}
+          {{ replace .Name "_" " " }}
         {{ else if .Identifier }}
-          {{ replace .Identifier "_" " " | title }}
+          {{ replace .Identifier "_" " " }}
         {{ else }}
           Link
         {{ end }}

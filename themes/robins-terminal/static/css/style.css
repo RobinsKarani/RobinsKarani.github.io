@@ -35,7 +35,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  line-height: 1.7;
+  line-height: 1.65;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 a {
@@ -65,9 +67,9 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 .nav-logo {
   display: block;
   margin-bottom: 1.5rem;
-  font-size: 1.55rem;
+  font-size: 1.34rem;
   color: var(--text);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.01em;
 }
 
@@ -75,8 +77,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 500;
   color: var(--text-muted);
   margin: 0 0 0.55rem;
 }
@@ -92,13 +94,13 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 .nav-links a {
   color: var(--text);
   font-family: var(--font-ui);
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: 0.92rem;
+  line-height: 1.35;
 }
 
 .nav-links a.active {
   color: var(--accent-strong);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .theme-toggle {
@@ -109,7 +111,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   border-radius: 999px;
   padding: 0.35rem 0.75rem;
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -137,15 +139,15 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .section-header h1 {
   margin: 0 0 0.4rem;
-  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
   line-height: 1.15;
   color: var(--text);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .section-header .subtitle {
   margin: 0;
-  font-size: 1.04rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
 }
 
@@ -161,15 +163,15 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 .post-title {
   display: inline-block;
   color: var(--text);
-  font-weight: 500;
-  font-size: 1.22rem;
+  font-weight: 400;
+  font-size: 1.04rem;
   margin-bottom: 0.45rem;
 }
 
 .post-excerpt {
   margin: 0 0 0.65rem;
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.92rem;
 }
 
 .post-read-more {
@@ -179,7 +181,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .post-meta {
   font-family: var(--font-ui);
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
   margin-bottom: 0.55rem;
   display: flex;
@@ -230,9 +232,9 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .article-header h1 {
   margin: 0 0 0.55rem;
-  font-size: clamp(1.45rem, 2.7vw, 2.1rem);
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Vanilla single-article look */
@@ -249,8 +251,9 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .container-single .article-body {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.08rem;
-  line-height: 1.75;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 [data-theme="light"] .container-single .article-body {
@@ -264,7 +267,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 }
 
 .article-body {
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   color: var(--text);
 }
 

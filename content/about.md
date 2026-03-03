@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "about me"
 date: 2026-03-02
 draft: false
 hideFromHome: true
