@@ -11,14 +11,12 @@
   </header>
   <main class="single-main">
     {{ block "main" . }}{{ end }}
-    {{ partial "footer.html" . }}
   </main>
   {{ else }}
   <div class="site-shell">
     {{ partial "nav.html" . }}
     <main class="site-main">
       {{ block "main" . }}{{ end }}
-      {{ partial "footer.html" . }}
     </main>
   </div>
   {{ end }}
