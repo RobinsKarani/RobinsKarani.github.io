@@ -235,6 +235,28 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   font-weight: 500;
 }
 
+/* Vanilla single-article look */
+[data-theme="light"] .container-single article {
+  background: #ffffff;
+  border: 1px solid #e4e1d8;
+  border-radius: 4px;
+  padding: 1.25rem 1.4rem;
+}
+
+[data-theme="light"] .container-single .article-header {
+  border-bottom-color: #ece9e1;
+}
+
+.container-single .article-body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+[data-theme="light"] .container-single .article-body {
+  color: #202020;
+}
+
 .cover-image img,
 .article-body img {
   max-width: 100%;
