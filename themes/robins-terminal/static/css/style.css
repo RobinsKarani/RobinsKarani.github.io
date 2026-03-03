@@ -1,15 +1,15 @@
 :root {
-  --bg: #efebe3;
-  --surface: #f6f3ec;
-  --surface-soft: #ebe6dc;
-  --border: #d6d0c4;
-  --text: #1f2226;
-  --text-muted: #60656d;
-  --accent: #4f688a;
-  --accent-strong: #3f5674;
-  --tag-bg: #23282e;
-  --tag-text: #d8d3c9;
-  --link-underline: rgba(167, 164, 158, 0.38);
+  --bg: #0e1a2b;
+  --surface: #13233a;
+  --surface-soft: #1b2d48;
+  --border: #2d4363;
+  --text: #e5edf8;
+  --text-muted: #9fb3cf;
+  --accent: #8fb2e8;
+  --accent-strong: #c0d7ff;
+  --tag-bg: #1f3452;
+  --tag-text: #d9e7fb;
+  --link-underline: rgba(159, 179, 207, 0.45);
   --font-body: "RM Serif Regular", "Times New Roman", Times, serif;
   --font-ui: "RM Serif Regular", "Times New Roman", Times, serif;
   --radius: 8px;
@@ -31,11 +31,30 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+html { overflow-y: scroll; }
+
+[data-theme="dark"] * {
+  scrollbar-color: #476288 #1a2b44;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-track {
+  background: #1a2b44;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-thumb {
+  background: #476288;
+  border: 2px solid #1a2b44;
+}
 
 /* Custom scrollbar */
 * {
   scrollbar-width: thin;
   scrollbar-color: #8f8a7f #d8d3c8;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
 }
 
 *::-webkit-scrollbar {
@@ -61,7 +80,7 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.65;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -225,8 +244,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   margin: 0 0 0.65rem;
   color: var(--text-muted);
   font-family: var(--font-body);
-  font-size: 1.14rem;
-  line-height: 1.7;
+  font-size: 1.04rem;
+  line-height: 1.64;
 }
 
 .post-read-more {
@@ -312,8 +331,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .container-single .article-body {
   font-family: var(--font-body);
-  font-size: 1.2rem;
-  line-height: 1.78;
+  font-size: 1.1rem;
+  line-height: 1.7;
   font-weight: 400;
 }
 
@@ -329,8 +348,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .article-body {
   font-family: var(--font-body);
-  font-size: 1.2rem;
-  line-height: 1.78;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: var(--text);
 }
 
@@ -470,7 +489,9 @@ footer {
   border-top: 1px solid var(--border);
   font-family: var(--font-ui);
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.78rem;
+  opacity: 0.72;
+  text-align: center;
 }
 
 @media (max-width: 900px) {

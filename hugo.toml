@@ -51,7 +51,7 @@ summaryLength = 50   # words in auto-generated summary
   # email, rss, steam, telegram, discord, substack
   [[menus.icons]]
     identifier = "github"
-    name       = "gitHub"
+    name       = "github"
     url        = "https://github.com/RobinsKarani"
     weight     = 1
   [[menus.icons]]

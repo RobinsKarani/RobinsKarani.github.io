@@ -1,3 +1,4 @@
 <footer>
-  <span>{{ .Site.Params.author | default (.Site.Params.handle | default "Robins") }}</span> · {{ now.Format "2006" }}
+  {{ $startYear := "2026" }}
+  <span>© {{ .Site.Params.author | default (.Site.Params.handle | default "Robins") }}</span> · {{ $startYear }}{{ if ne (now.Format "2006") $startYear }}–present{{ end }}
 </footer>
