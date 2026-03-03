@@ -4,6 +4,16 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+  {{ if .IsPage }}
+  <header class="page-topbar">
+    <a class="top-brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <a class="top-home" href="{{ "/" | relURL }}">home</a>
+  </header>
+  <main class="single-main">
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </main>
+  {{ else }}
   <div class="site-shell">
     {{ partial "nav.html" . }}
     <main class="site-main">
@@ -11,6 +21,7 @@
       {{ partial "footer.html" . }}
     </main>
   </div>
+  {{ end }}
 
   <script src="{{ "js/main.js" | relURL }}"></script>
 
