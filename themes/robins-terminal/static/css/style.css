@@ -1,12 +1,12 @@
 :root {
-  --bg: #111315;
-  --surface: #171a1d;
-  --surface-soft: #1f2328;
-  --border: #2c3238;
-  --text: #e6e3dd;
-  --text-muted: #a7a49e;
-  --accent: #9fb2cc;
-  --accent-strong: #bfd0e6;
+  --bg: #efebe3;
+  --surface: #f6f3ec;
+  --surface-soft: #ebe6dc;
+  --border: #d6d0c4;
+  --text: #1f2226;
+  --text-muted: #60656d;
+  --accent: #4f688a;
+  --accent-strong: #3f5674;
   --tag-bg: #23282e;
   --tag-text: #d8d3c9;
   --link-underline: rgba(167, 164, 158, 0.38);
@@ -61,7 +61,7 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.65;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -92,7 +92,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 .nav-logo {
   display: block;
   margin-bottom: 1.5rem;
-  font-size: 1.34rem;
+  font-size: 1.62rem;
   color: var(--text);
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -102,7 +102,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-muted);
   margin: 0 0 0.55rem;
@@ -119,8 +119,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 .nav-links a {
   color: var(--text);
   font-family: var(--font-ui);
-  font-size: 0.92rem;
-  line-height: 1.35;
+  font-size: 1.12rem;
+  line-height: 1.5;
 }
 
 .nav-links a.active {
@@ -136,7 +136,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   border-radius: 999px;
   padding: 0.35rem 0.75rem;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -156,6 +156,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .container {
   max-width: 700px;
+  margin: 0 auto;
 }
 
 .page-topbar {
@@ -191,7 +192,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .section-header h1 {
   margin: 0 0 0.4rem;
-  font-size: clamp(1.18rem, 2.1vw, 1.68rem);
+  font-size: clamp(1.42rem, 2.4vw, 2.1rem);
   line-height: 1.15;
   color: color-mix(in srgb, var(--text) 86%, var(--text-muted) 14%);
   font-weight: 400;
@@ -199,7 +200,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .section-header .subtitle {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.06rem;
   color: var(--text-muted);
 }
 
@@ -216,7 +217,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   display: inline-block;
   color: color-mix(in srgb, var(--text) 88%, var(--text-muted) 12%);
   font-weight: 400;
-  font-size: 0.98rem;
+  font-size: 1.34rem;
   margin-bottom: 0.45rem;
 }
 
@@ -224,8 +225,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
   margin: 0 0 0.65rem;
   color: var(--text-muted);
   font-family: var(--font-body);
-  font-size: 0.88rem;
-  line-height: 1.62;
+  font-size: 1.14rem;
+  line-height: 1.7;
 }
 
 .post-read-more {
@@ -235,7 +236,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .post-meta {
   font-family: var(--font-ui);
-  font-size: 0.76rem;
+  font-size: 0.94rem;
   color: var(--text-muted);
   margin-bottom: 0.55rem;
   display: flex;
@@ -286,7 +287,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .article-header h1 {
   margin: 0 0 0.55rem;
-  font-size: clamp(1.12rem, 1.9vw, 1.5rem);
+  font-size: clamp(1.46rem, 2.2vw, 2.04rem);
   line-height: 1.2;
   color: color-mix(in srgb, var(--text) 86%, var(--text-muted) 14%);
   font-weight: 400;
@@ -294,14 +295,14 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 /* Vanilla single-article look */
 [data-theme] .container-single article {
-  background: var(--bg);
+  background: var(--bg) !important;
   border: none;
   box-shadow: none;
   padding: 0;
 }
 
 [data-theme="light"] .container-single article {
-  background: var(--bg);
+  background: var(--bg) !important;
   border-radius: 0;
 }
 
@@ -311,8 +312,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .container-single .article-body {
   font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.62;
+  font-size: 1.2rem;
+  line-height: 1.78;
   font-weight: 400;
 }
 
@@ -328,8 +329,8 @@ a:hover { color: var(--accent-strong); text-decoration-color: var(--accent-stron
 
 .article-body {
   font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.62;
+  font-size: 1.2rem;
+  line-height: 1.78;
   color: var(--text);
 }
 
@@ -469,7 +470,7 @@ footer {
   border-top: 1px solid var(--border);
   font-family: var(--font-ui);
   color: var(--text-muted);
-  font-size: 0.82rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 900px) {
