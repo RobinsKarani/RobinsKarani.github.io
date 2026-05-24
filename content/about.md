@@ -10,11 +10,13 @@ I am Robinson Karani, a CS student, builder, and founder.
 
 I am interested in startups, intelligent systems, high-performance systems, emerging tech, AI, cognitive science, and the kind of tech that turns ideas into useful products.
 
-I learn best by building. I like starting from first principles, moving fast from ideas to working products, and documenting what works, what fails, and what I learn in the process.
+I love building: software/hardware and startups. Startups are great to me because they let you turn ideas into beautiful things people can use at scale. There is something deeply satisfying about seeing people enjoy and benefit from something you helped create.
+
+I learn best by building. I prefer reasoning from first principles, moving fast from ideas to working products, and documenting what works, what fails, and what I learn in the process.
 
 > "For the things we have to learn before we can do them, we learn by doing them."
 >
-> — Aristotle, *Nicomachean Ethics*, Book II
+> — Aristotle, *Nicomachean Ethics*
 
 <p class="contact-meta">
   Contact: <a href="mailto:robinskarani1@gmail.com">robinskarani1@gmail.com</a>
