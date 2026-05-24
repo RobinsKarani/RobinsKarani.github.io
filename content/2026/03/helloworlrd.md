@@ -3,7 +3,7 @@ title: "Hello World"
 date: 2026-03-02
 tags: ["introduction", "personal", "blog"]
 draft: false
-description: "Robinson Karani's first blog post on building, startups, AI, intelligent systems, and learning in public."
+description: "Intro blog."
 ---
 
 Hi there!
