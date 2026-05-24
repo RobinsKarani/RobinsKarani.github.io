@@ -10,7 +10,7 @@ I am Robinson Karani, a CS student, builder, and founder.
 
 I am interested in startups, intelligent systems, high-performance systems, emerging tech, AI, cognitive science, and the kind of tech that turns ideas into useful products.
 
-I learn best by building. I like starting from first principles, moving fast from ideas to working products, and documenting what works, what fails, and what becomes clearer through action.
+I learn best by building. I like starting from first principles, moving fast from ideas to working products, and documenting what works, what fails, and what I learn in the process.
 
 > "For the things we have to learn before we can do them, we learn by doing them."
 >
