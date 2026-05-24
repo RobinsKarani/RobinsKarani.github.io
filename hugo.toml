@@ -67,10 +67,13 @@ summaryLength = 50   # words in auto-generated summary
   initials    = "RK"             # shown in logo box if no logo image
   domain      = "karani"         # shown in footer prompt
   author      = "Robinson Karani"
-  description = "Hardware · ML · Cryptography · CogSci"
+  seoTitle    = "Robinson Karani | Builder and Founder"
+  description = "Personal website and blog of Robinson Karani, a CS student, builder, and founder interested in startups, intelligent systems, high-performance systems, AI, cognitive science, and software/hardware."
+  keywords    = ["Robinson Karani", "Robins Karani", "Robins", "builder", "founder", "startups", "software hardware", "intelligent systems", "high-performance systems", "AI", "cognitive science"]
   tagline     = "hardware · ml · cryptography · cogSci — notes from the rabbit hole"
   footerMsg   = "built with ♥"
   faviconVersion = "20260302-3"
+  twitterHandle = "robinskarani"
 
   # Logo (optional — uses initials box if not set)
   # logo        = "/logo.svg"

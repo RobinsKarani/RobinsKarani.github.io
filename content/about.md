@@ -4,6 +4,7 @@ date: 2026-03-02
 draft: false
 hideFromHome: true
 hideMeta: true
+description: "About Robinson Karani, a CS student, builder, and founder interested in startups, intelligent systems, high-performance systems, AI, cognitive science, and software/hardware."
 ---
 
 I am Robinson Karani, a CS student, builder, and founder.
