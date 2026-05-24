@@ -1,7 +1,6 @@
 <nav class="site-nav">
   <a class="nav-logo" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
 
-  <p class="nav-heading">Navigation</p>
   <ul class="nav-links">
     {{ range .Site.Menus.main }}
     <li>
@@ -16,15 +15,9 @@
       </a>
     </li>
     {{ end }}
-  </ul>
-
-  {{ if .Site.Menus.icons }}
-  <p class="nav-heading">Find me on</p>
-  <ul class="nav-links nav-social">
     {{ range .Site.Menus.icons }}
     <li><a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">{{ .Name }}</a></li>
     {{ end }}
   </ul>
-  {{ end }}
 
 </nav>
