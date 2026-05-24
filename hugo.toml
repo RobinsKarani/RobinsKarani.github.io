@@ -40,10 +40,6 @@ summaryLength = 50   # words in auto-generated summary
     name   = "about_me"
     url    = "/about/"
     weight = 2
-  [[menus.main]]
-    name   = "projects"
-    url    = "/projects/"
-    weight = 3
 
   # ── Social icon links (shown as icon row below nav) ──────
   # identifier must match a supported icon name:

@@ -6,17 +6,15 @@ draft: false
 description: "My first blog post"
 ---
 
-Hi there! 👋
+Hi there!
 
-Welcome to my new blog. This is my very first post, and I'm excited to share my thoughts, projects, and experiments here.
+Welcome to my blog. This is where I will write about what I am building, learning, and thinking through as a CS student, builder, and founder.
 
 A little about me:
 
-- I love technology, AI, and exploring new ideas.
-- I enjoy building things from scratch, guided by **first principles**.
-- I hope this blog becomes a place to track my learning and share insights.
+- I am interested in startups, intelligent systems, and high-performance systems.
 
-Stay tuned for upcoming posts on all things tech especially AI,hardware, and maybe some random musings about tech and life.
+Expect articles on tech,especially AI, and the occasional reflection on life around the work.
 
 Thanks for stopping by!  
 – Robin
