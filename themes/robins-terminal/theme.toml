@@ -8,5 +8,5 @@ features    = ["Dark/Light mode", "Syntax highlighting", "Image support", "Tags"
 min_version = "0.110.0"
 
 [author]
-  name    = "Robinson Karani"
+  name    = "Robinson Karani Thiaine"
   homepage = "https://robinskarani.github.io"

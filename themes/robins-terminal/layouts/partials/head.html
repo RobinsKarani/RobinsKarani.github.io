@@ -30,12 +30,12 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": {{ .Site.Params.author | jsonify | safeJS }},
-  "alternateName": {{ .Site.Params.handle | jsonify | safeJS }},
+  {{ if .Site.Params.alternateNames }}"alternateName": {{ .Site.Params.alternateNames | jsonify | safeJS }},{{ else }}"alternateName": {{ .Site.Params.handle | jsonify | safeJS }},{{ end }}
   "url": {{ .Site.BaseURL | jsonify | safeJS }},
   "description": {{ .Site.Params.description | jsonify | safeJS }},
   "sameAs": [
     "https://github.com/RobinsKarani",
-    "https://x.com/robinskarani",
+    "https://x.com/robins_thiaine",
     "https://www.linkedin.com/in/robinsonkarani/"
   ],
   "knowsAbout": {{ .Site.Params.keywords | jsonify | safeJS }}
