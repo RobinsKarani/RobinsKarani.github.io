@@ -53,7 +53,7 @@ summaryLength = 50   # words in auto-generated summary
   [[menus.icons]]
     identifier = "twitter"
     name       = "x (twitter)"
-    url        = "https://x.com/robinskarani"
+    url        = "https://x.com/robins_thiaine"
     weight     = 2
   [[menus.icons]]
     identifier = "linkedin"
@@ -66,14 +66,15 @@ summaryLength = 50   # words in auto-generated summary
   handle      = "robins"         # shown in logo, prompts, footer
   initials    = "RK"             # shown in logo box if no logo image
   domain      = "karani"         # shown in footer prompt
-  author      = "Robinson Karani"
-  seoTitle    = "Robinson Karani | Builder and Founder"
-  description = "Personal website and blog of Robinson Karani, a CS student, builder, and founder interested in startups, intelligent systems, high-performance systems, AI, cognitive science, and software/hardware."
-  keywords    = ["Robinson Karani", "Robins Karani", "Robins", "builder", "founder", "startups", "software hardware", "intelligent systems", "high-performance systems", "AI", "cognitive science"]
+  author      = "Robinson Karani Thiaine"
+  seoTitle    = "Robinson Karani Thiaine | Builder and Founder"
+  description = "Personal website and blog of Robinson Karani Thiaine, a CS student, builder, and founder interested in startups, intelligent systems, high-performance systems, AI, cognitive science, and software/hardware."
+  keywords    = ["Robinson Karani Thiaine", "Robinson Karani", "Robinson Thiaine", "Robins Karani", "Robins Thiaine", "Robins", "builder", "founder", "startups", "software hardware", "intelligent systems", "high-performance systems", "AI", "cognitive science"]
+  alternateNames = ["Robinson Karani", "Robinson Thiaine", "Robins Karani", "Robins Thiaine", "robins"]
   tagline     = "hardware · ml · cryptography · cogSci — notes from the rabbit hole"
   footerMsg   = "built with ♥"
   faviconVersion = "20260302-3"
-  twitterHandle = "robinskarani"
+  twitterHandle = "robins_thiaine"
 
   # Logo (optional — uses initials box if not set)
   # logo        = "/logo.svg"
