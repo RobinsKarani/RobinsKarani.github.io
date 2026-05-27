@@ -27,3 +27,5 @@ pnpm-debug.log*
 # Unused local theme checkouts (active theme is `robins-terminal`)
 themes/ananke/
 themes/robins-terminal-v2/
+
+postingblogguide.md
