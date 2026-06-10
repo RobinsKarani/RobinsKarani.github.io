@@ -20,7 +20,7 @@ I learn best by building. I prefer reasoning from first principles, moving fast 
 > — Aristotle, *Nicomachean Ethics*
 
 <p class="contact-meta">
-  Contact: <a href="mailto:robinskarani1@gmail.com">robinskarani1@gmail.com</a>
+  Contact: <a href="mailto:robinskarani1@gmail.com">Email me</a>
   ·
   <a href="https://drive.google.com/file/d/1ueFpadFyb02-CCrWBBseqqaMvV-nKlBA/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Check my CV</a>
 </p>
