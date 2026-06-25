@@ -33,13 +33,9 @@ summaryLength = 50   # words in auto-generated summary
 # ── Nav menu ──────────────────────────────────────────────
 [menus]
   [[menus.main]]
-    name   = "blog"
+    name   = "home"
     url    = "/"
     weight = 1
-  [[menus.main]]
-    name   = "about_me"
-    url    = "/about/"
-    weight = 2
 
   # ── Social icon links (shown as icon row below nav) ──────
   # identifier must match a supported icon name:
@@ -67,7 +63,7 @@ summaryLength = 50   # words in auto-generated summary
   initials    = "RK"             # shown in logo box if no logo image
   domain      = "karani"         # shown in footer prompt
   author      = "Robinson Karani Thiaine"
-  seoTitle    = "Robinson Karani Thiaine | Builder and Founder"
+  seoTitle    = "Robinson Karani Thiaine"
   description = "Personal website and blog of Robinson Karani Thiaine, a CS student, builder, and founder interested in startups, intelligent systems, high-performance systems, AI, cognitive science, and software/hardware."
   keywords    = ["Robinson Karani Thiaine", "Robinson Karani", "Robinson Thiaine", "Robins Karani", "Robins Thiaine", "Robins", "builder", "founder", "startups", "software hardware", "intelligent systems", "high-performance systems", "AI", "cognitive science"]
   alternateNames = ["Robinson Karani", "Robinson Thiaine", "Robins Karani", "Robins Thiaine", "robins"]

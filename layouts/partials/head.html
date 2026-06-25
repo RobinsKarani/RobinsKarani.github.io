@@ -1,0 +1,97 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{ $description := .Description | default .Site.Params.description }}
+{{ $title := cond .IsHome (.Site.Params.seoTitle | default .Site.Params.author) (printf "%s // %s" .Title .Site.Params.author) }}
+<meta name="description" content="{{ $description }}" />
+<meta name="author" content="{{ .Site.Params.author }}" />
+{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}" />{{ end }}
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ with .Params.cover }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+{{ with .Site.Params.twitterHandle }}<meta name="twitter:creator" content="@{{ . }}" />{{ end }}
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+<title>{{ $title }}</title>
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ .Site.Params.author | jsonify | safeJS }},
+  {{ if .Site.Params.alternateNames }}"alternateName": {{ .Site.Params.alternateNames | jsonify | safeJS }},{{ else }}"alternateName": {{ .Site.Params.handle | jsonify | safeJS }},{{ end }}
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "description": {{ .Site.Params.description | jsonify | safeJS }},
+  "sameAs": [
+    "https://github.com/RobinsKarani",
+    "https://x.com/robins_thiaine",
+    "https://www.linkedin.com/in/robinsonkarani/"
+  ],
+  "knowsAbout": {{ .Site.Params.keywords | jsonify | safeJS }}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ .Site.Params.seoTitle | default .Site.Title | jsonify | safeJS }},
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "author": {
+    "@type": "Person",
+    "name": {{ .Site.Params.author | jsonify | safeJS }}
+  }
+}
+</script>
+{{ else if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ if eq .Section "2026" }}"BlogPosting"{{ else }}"WebPage"{{ end }},
+  "headline": {{ .Title | jsonify | safeJS }},
+  "description": {{ $description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "datePublished": {{ .Date.Format "2006-01-02" | jsonify | safeJS }},
+  "author": {
+    "@type": "Person",
+    "name": {{ .Site.Params.author | jsonify | safeJS }}
+  }
+}
+</script>
+{{ end }}
+
+{{ $favVersion := .Site.Params.faviconVersion | default "1" }}
+<link rel="icon" type="image/png" sizes="32x32" href='{{ printf "%s?v=%s" ("favicon.png" | relURL) $favVersion }}' />
+<link rel="shortcut icon" type="image/png" href='{{ printf "%s?v=%s" ("favicon.png" | relURL) $favVersion }}' />
+<link rel="apple-touch-icon" href='{{ printf "%s?v=%s" ("favicon.png" | relURL) $favVersion }}' />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+
+<!-- Syntax Highlighting (Hugo built-in) -->
+{{ if .Site.Params.syntaxHighlight }}
+<link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}" />
+{{ end }}
+
+<!-- Theme init: restore saved theme before paint to avoid flash -->
+<script>
+  (function() {
+    var t = localStorage.getItem('rk-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
