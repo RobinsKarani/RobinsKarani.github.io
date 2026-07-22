@@ -68,11 +68,11 @@ body {
   position: relative;
 }
 
-/* Top-Right Theme Toggle */
+/* Top-Right Fixed Theme Toggle */
 .neo-theme-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
   background: var(--card-bg);
   color: var(--text);
   border: 2px solid var(--border);
@@ -85,7 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1000;
   transition: all 0.15s ease;
 }
 
@@ -527,8 +527,8 @@ body {
   }
 
   .neo-theme-toggle {
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
     width: 40px;
     height: 40px;
   }
